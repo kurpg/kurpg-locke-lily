@@ -6,7 +6,7 @@
     }
 </script>
 
-  <title>UdonariumLily 1.06.0b3</title>
+  <title>UdonariumLily 1.07.0b5</title>
 <!--
 
 0.02.0 立ち絵表示を12ポジションに、アクティブを手前に、他を薄く
@@ -233,16 +233,47 @@ bcdice-jp 3.5.0に更新
 火狐でバフの表示が崩れる現象を修正
 キャラクターの情報ポップアップの横幅を広げたとき画面右端をウィンドウが超えてしまうことがある現象を修正
 
+1.06.0
+公開用にバージョン更新
 
+1.07.0b0
+チャットパレットにオートコンプリート機能を追加
+
+1.07.0b0
+チャットパレットにオートコンプリート機能を追加
+
+1.07.0b1
+・チャットパレット編集時に元の文章がある位置に大まかに移動(仮機能)
+・本家1.14.0の更新を取り込み
+
+1.07.0b2
+・オートコンプリートにて上下キーで行移動ができなかった問題を対処。
+・キャラコマ画像の高さを指定できる機能を追加(横長の画像対策)。
+・他のコマから画像一式をインポートする機能を追加。
+
+1.07.0b3
+・他のコマから画像一式をインポートでICON数値が変動しなかった問題を修正。
+・ダイス画像の高さを指定できる機能を追加
+・ルーム全体(参加者全員)の音量を設定する項目を追加
+・ルームのデフォルトのダイスボットを設定する機能を追加
+
+1.07.0b4
+・bcdice 3.6.0 に対応
+・オートコンプリート機能、候補選択状態でフォーカスアウトした後、選択状態の候補をクリックしたときに動作しなかった現象を修正
+・投票機能のメッセージに投票のタイトルを含める様に修正
+・chrome ver102 のアップデート以降動作が重くなる現象に暫定対処
+
+1.07.0b5
+・chrome ver102 のアップデート以降動作が重くなる現象への対策追加、バグ修正
 -->
   <base href="./">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v126/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
-  <style>body{font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif}body{margin:2em}body{color:#888}html,body{width:100%;height:100%;margin:0;padding:0;overflow:hidden;background-color:hsl(0, 0%, 97%);touch-action:manipulation}body{position:relative}.sk-cube-grid{position:absolute;top:0;left:0;bottom:0;right:0;width:100px;height:100px;margin:auto}.sk-cube-grid .sk-cube{width:33%;height:33%;background-color:#666;float:left;-webkit-animation:sk-cubeGridScaleDelay 1.3s infinite ease-in-out;animation:sk-cubeGridScaleDelay 1.3s infinite ease-in-out}.sk-cube-grid .sk-title{width:100%;text-align:center;float:left}.sk-cube-grid .sk-cube1{-webkit-animation-delay:0.2s;animation-delay:0.2s}.sk-cube-grid .sk-cube2{-webkit-animation-delay:0.3s;animation-delay:0.3s}.sk-cube-grid .sk-cube3{-webkit-animation-delay:0.4s;animation-delay:0.4s}.sk-cube-grid .sk-cube4{-webkit-animation-delay:0.1s;animation-delay:0.1s}.sk-cube-grid .sk-cube5{-webkit-animation-delay:0.2s;animation-delay:0.2s}.sk-cube-grid .sk-cube6{-webkit-animation-delay:0.3s;animation-delay:0.3s}.sk-cube-grid .sk-cube7{-webkit-animation-delay:0s;animation-delay:0s}.sk-cube-grid .sk-cube8{-webkit-animation-delay:0.1s;animation-delay:0.1s}.sk-cube-grid .sk-cube9{-webkit-animation-delay:0.2s;animation-delay:0.2s}@keyframes sk-cubeGridScaleDelay{0%,70%,100%{-webkit-transform:scale(1, 1);transform:scale(1, 1)}35%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}}</style><link rel="stylesheet" href="./assets/styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="./assets/styles.css"></noscript>
-<link rel="stylesheet" href="styles.7266028956b01b1a71fd.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.7266028956b01b1a71fd.css"></noscript></head>
+  <style type="text/css">@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v129/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
+  <style>body{font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", Verdana, Meiryo, "M+ 1p", sans-serif}body{margin:2em}body{color:#888}html,body{width:100%;height:100%;margin:0;padding:0;overflow:hidden;background-color:hsl(0, 0%, 97%);touch-action:manipulation}body{position:relative}.sk-cube-grid{position:absolute;top:0;left:0;bottom:0;right:0;width:100px;height:100px;margin:auto}.sk-cube-grid .sk-cube{width:33%;height:33%;background-color:#666;float:left;-webkit-animation:sk-cubeGridScaleDelay 1.3s infinite ease-in-out;animation:sk-cubeGridScaleDelay 1.3s infinite ease-in-out}.sk-cube-grid .sk-title{width:100%;text-align:center;float:left}.sk-cube-grid .sk-cube1{-webkit-animation-delay:0.2s;animation-delay:0.2s}.sk-cube-grid .sk-cube2{-webkit-animation-delay:0.3s;animation-delay:0.3s}.sk-cube-grid .sk-cube3{-webkit-animation-delay:0.4s;animation-delay:0.4s}.sk-cube-grid .sk-cube4{-webkit-animation-delay:0.1s;animation-delay:0.1s}.sk-cube-grid .sk-cube5{-webkit-animation-delay:0.2s;animation-delay:0.2s}.sk-cube-grid .sk-cube6{-webkit-animation-delay:0.3s;animation-delay:0.3s}.sk-cube-grid .sk-cube7{-webkit-animation-delay:0s;animation-delay:0s}.sk-cube-grid .sk-cube8{-webkit-animation-delay:0.1s;animation-delay:0.1s}.sk-cube-grid .sk-cube9{-webkit-animation-delay:0.2s;animation-delay:0.2s}@-webkit-keyframes sk-cubeGridScaleDelay{0%,70%,100%{-webkit-transform:scale(1, 1);transform:scale(1, 1)}35%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}}@-webkit-keyframes anime1{0%{-webkit-transform:rotateZ(0deg);transform:rotateZ(0deg)}100%{-webkit-transform:rotateZ(180deg);transform:rotateZ(180deg)}}@keyframes sk-cubeGridScaleDelay{0%,70%,100%{-webkit-transform:scale(1, 1);transform:scale(1, 1)}35%{-webkit-transform:scale(0, 0);transform:scale(0, 0)}}</style><link rel="stylesheet" href="./assets/styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="./assets/styles.css"></noscript>
+<link rel="stylesheet" href="styles.091e2a12b7ef3e2f.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.091e2a12b7ef3e2f.css"></noscript></head>
 
 <body>
   <app-root>
@@ -263,6 +294,7 @@ bcdice-jp 3.5.0に更新
   <script type="text/yaml" src="./assets/config.yaml"></script>
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
   <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.min.js"></script>
-<script src="runtime.fb3107c8f8dd5dec6fac.js" defer></script><script src="polyfills.202f268eb83e04426a58.js" defer></script><script src="main.ec60ac4e500d79993069.js" defer></script>
+<script src="runtime.d57f0079ab603065.js" type="module"></script><script src="polyfills.3298f475f10f1f2f.js" type="module"></script><script src="main.2a3928f442afbb9b.js" type="module"></script>
+
 
 </body></html>
